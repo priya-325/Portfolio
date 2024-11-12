@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Priyanka Eshwaroju | Personal Portfolio",
   description:
-    "Priyanka Eshwaroju is a full-stack developer with 3 years of experience.",
+    "Priyanka Eshwaroju is a Software Developer with 3 years of experience.",
 };
 
 export default function RootLayout({
