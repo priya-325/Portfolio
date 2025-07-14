@@ -35,10 +35,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Bachelors in Computer Science Engineering",
+    title: "BEng in Computer Science and Engineering",
     location: "Hyderabad, India",
     description:
-      "I graduated after 3 years of studying. I immediately found a job as a front-end developer.",
+      "I graduated and immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
     date: "2021",
   },
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Hyderabad, India",
     description:
-      "I worked as a front-end developer for 1.5 years. I also upskilled to the full stack.",
+      "I worked as a front-end developer. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2022",
   },
@@ -54,12 +54,12 @@ export const experiencesData = [
     title: "Masters in Computer Science",
     location: "Dundee, Scotland, UK",
     description:
-      "I graduated after 1 year of studying. I immediately found a job as a full-stack developer.",
+      "I graduated and immediately found a job as a full-stack developer.",
     icon: React.createElement(LuGraduationCap),
     date: "2023 - 2024",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Data Platform Specialist",
     location: "London, UK",
     description:
       "I worked with React, Next.js, TypeScript, Tailwind, Prisma and MongoDB.",
@@ -95,11 +95,9 @@ export const projectsData = [
 export const skillsData = [
   "C++",
   "JAVA",
-  "C#",
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
   "React",
   "Next.js",
   "Node.js",
@@ -107,7 +105,6 @@ export const skillsData = [
   "Tailwind",
   "Prisma",
   "MongoDB",
-  "Redux",
   "Express",
   "PostgreSQL",
   "Python",
