@@ -10,7 +10,7 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Priyanka Eshwaroju | Personal Portfolio",
+  title: "PRIYANKA ESHWAROJU",
   description:
     "Priyanka Eshwaroju is a Software Developer with 3 years of experience.",
 };
