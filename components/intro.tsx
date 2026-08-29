@@ -19,7 +19,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[55rem] scroll-mt-[100rem] text-center sm:mb-32"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -34,10 +34,10 @@ export default function Intro() {
             <Image
               src={img}
               alt="Priyanka Eshwaroju"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
+              width={192}
+              height={192}
+              quality={95}
+              priority
               className="h-24 w-24 rounded-full object-cover shadow-xl"
             />
           </motion.div>
@@ -59,62 +59,140 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-5 mt-5 px-4 text-3xl font-medium !leading-[1.4] sm:text-5xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Priyanka.</span> I'm a{" "}
-        <span className="font-bold">Software Developer</span> with{" "}
-        <span className="font-bold">3+</span> years of experience. I enjoy
-        building <span className="italic">sites & apps</span>.
-        {/* My focus is{" "}
-        <span className="underline">React (Next.js)</span>. */}
+        Hi, I'm <span className="font-bold">Priyanka Eshwaroju.</span>
+        <br />
+        <span className="font-bold">Full-Stack Software Engineer</span>
       </motion.h1>
 
-      <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+      <motion.p
+        className="mx-auto mb-4 max-w-[46rem] px-4 text-base leading-7 text-gray-700 sm:text-lg dark:text-white/75"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.05,
+        }}
+      >
+        I build and deploy end-to-end web applications using{" "}
+        <span className="font-semibold">
+          React.js, TypeScript, Node.js, Express.js and PostgreSQL
+        </span>
+        , with hands-on experience building{" "}
+        <span className="font-semibold">AI-powered applications</span> using
+        LangChain, LLM APIs, embeddings and vector databases.
+      </motion.p>
+
+      <motion.p
+        className="mx-auto mb-8 max-w-[44rem] px-4 text-sm leading-6 text-gray-600 sm:text-base dark:text-white/60"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.08,
+        }}
+      >
+        3+ years of software development experience across full-stack product
+        development, REST APIs, authentication, databases, cloud infrastructure
+        and production deployment.
+      </motion.p>
+
+      <motion.div
+        className="mb-5 flex items-center justify-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{
           delay: 0.1,
         }}
       >
-        {/* <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+        <span className="flex items-center gap-2 rounded-full border border-green-200 bg-green-50 px-4 py-2 text-sm font-medium text-green-800 dark:border-green-900 dark:bg-green-950/40 dark:text-green-300">
+          <span className="h-2 w-2 rounded-full bg-green-500" />
+          Open to Software Engineer & Full-Stack Developer opportunities
+        </span>
+      </motion.div>
+
+      <motion.div
+        className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.12,
+        }}
+      >
+        <Link
+          href="#projects"
+          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-105 hover:bg-gray-950 focus:scale-105 active:scale-100 dark:bg-gray-50 dark:text-gray-950"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection("Projects");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link> */}
+          View my work
+          <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
+        </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-105 focus:scale-105 active:scale-100 borderBlack dark:bg-white/10"
           href="/PriyankaEshwarojuResume.pdf"
           download
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Download Resume
+          <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="flex items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.1] hover:text-gray-950 focus:scale-[1.1] active:scale-100 borderBlack dark:bg-white/10 dark:text-white/70"
           href="https://www.linkedin.com/in/priyanka-eshwaroju"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Priyanka Eshwaroju on LinkedIn"
         >
           <BsLinkedin />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="flex items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.1] hover:text-gray-950 focus:scale-[1.1] active:scale-100 borderBlack dark:bg-white/10 dark:text-white/70"
           href="https://github.com/priya-325"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Priyanka Eshwaroju on GitHub"
         >
           <FaGithubSquare />
         </a>
+      </motion.div>
+
+      <motion.div
+        className="mt-10 flex flex-wrap justify-center gap-3 px-4 text-sm text-gray-600 dark:text-white/60"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          delay: 0.2,
+        }}
+      >
+        <span className="rounded-full bg-white px-4 py-2 borderBlack dark:bg-white/10">
+          React.js
+        </span>
+
+        <span className="rounded-full bg-white px-4 py-2 borderBlack dark:bg-white/10">
+          TypeScript
+        </span>
+
+        <span className="rounded-full bg-white px-4 py-2 borderBlack dark:bg-white/10">
+          Node.js
+        </span>
+
+        <span className="rounded-full bg-white px-4 py-2 borderBlack dark:bg-white/10">
+          PostgreSQL
+        </span>
+
+        <span className="rounded-full bg-white px-4 py-2 borderBlack dark:bg-white/10">
+          LangChain
+        </span>
+
+        <span className="rounded-full bg-white px-4 py-2 borderBlack dark:bg-white/10">
+          AWS
+        </span>
       </motion.div>
     </section>
   );

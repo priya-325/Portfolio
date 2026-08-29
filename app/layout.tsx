@@ -10,9 +10,70 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "PRIYANKA ESHWAROJU",
+  metadataBase: new URL("https://priyankaeshwaroju.com"),
+
+  title: {
+    default: "Priyanka Eshwaroju | Full-Stack Software Engineer",
+    template: "%s | Priyanka Eshwaroju",
+  },
+
   description:
-    "Priyanka Eshwaroju is a Software Developer with 3 years of experience.",
+    "Portfolio of Priyanka Eshwaroju, a Full-Stack Software Engineer with 3+ years of experience building web and AI applications using React.js, TypeScript, Node.js, Express.js, PostgreSQL, Supabase and LangChain.",
+
+  keywords: [
+    "Priyanka Eshwaroju",
+    "Full Stack Developer",
+    "Full Stack Software Engineer",
+    "Software Engineer",
+    "React Developer",
+    "TypeScript Developer",
+    "Node.js Developer",
+    "React.js",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "Supabase",
+    "LangChain",
+    "RAG",
+    "AI Developer",
+    "Hyderabad Software Developer",
+  ],
+
+  authors: [
+    {
+      name: "Priyanka Eshwaroju",
+      url: "https://priyankaeshwaroju.com",
+    },
+  ],
+
+  creator: "Priyanka Eshwaroju",
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://priyankaeshwaroju.com",
+    title: "Priyanka Eshwaroju | Full-Stack Software Engineer",
+    description:
+      "Full-Stack Software Engineer building production web and AI applications with React.js, TypeScript, Node.js, PostgreSQL and LangChain.",
+    siteName: "Priyanka Eshwaroju Portfolio",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Priyanka Eshwaroju | Full-Stack Software Engineer",
+    description:
+      "Full-Stack Software Engineer building production web and AI applications.",
+  },
+
+  alternates: {
+    canonical: "https://priyankaeshwaroju.com",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

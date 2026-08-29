@@ -11,38 +11,67 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 p-20"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+      className="mb-28 max-w-[48rem] scroll-mt-28 text-center leading-8 sm:mb-40"
+      initial={{
+        opacity: 0,
+        y: 100,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+      viewport={{
+        once: true,
+      }}
+      transition={{
+        duration: 0.6,
+      }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Computer Science</span>, I decided to
-        pursue my passion in coding and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+      <SectionHeading>About Me</SectionHeading>
+
+      <p className="mb-4">
+        I'm a{" "}
+        <span className="font-semibold">Full-Stack Software Engineer</span> with
+        3+ years of experience building and deploying end-to-end web
+        applications across frontend, backend, databases and cloud environments.
+      </p>
+
+      <p className="mb-4">
+        My primary stack includes{" "}
+        <span className="font-semibold">
+          React.js, TypeScript, Node.js, Express.js, PostgreSQL and Supabase
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . I have hands-on experience developing responsive user interfaces,
+        designing REST APIs, implementing authentication and authorization,
+        modelling relational databases, debugging, testing and deploying
+        production applications.
+      </p>
+
+      <p className="mb-4">
+        I'm also building{" "}
+        <span className="font-semibold">AI-enabled applications</span> using
+        LangChain, LLM APIs, Retrieval-Augmented Generation, embeddings and
+        vector databases. I enjoy solving problems across the complete product
+        stack rather than focusing on only one layer of an application.
+      </p>
+
+      <p className="mb-4">
+        I hold a{" "}
+        <span className="font-semibold">
+          Master of Science in Computer Science
+        </span>{" "}
+        from the University of Dundee and a Bachelor of Engineering in Computer
+        Science and Engineering from Osmania University.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        games, dancing, watching movies, and exercising. I also enjoy{" "}
-        <span className="font-medium">learning new things</span> and
-        continuously strive to improve myself both{" "}
-        <span className="font-medium">personally and professionally</span>. I'm
-        also learning how to play the ukulele.
+        I'm currently open to{" "}
+        <span className="font-semibold">
+          Software Engineer and Full-Stack Developer opportunities
+        </span>{" "}
+        where I can contribute to production applications, scalable systems and
+        modern AI-powered products.
       </p>
     </motion.section>
   );
